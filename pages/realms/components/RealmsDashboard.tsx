@@ -23,9 +23,10 @@ export default function RealmsDashboard({
     realms,
   ])
 
-  const unchartedRealms = useMemo(() => realms?.filter((r) => !r.isCertified), [
-    realms,
-  ])
+  // Hide uncharted DAOs
+  //const unchartedRealms = useMemo(() => realms?.filter((r) => !r.isCertified), [
+  //  realms,
+  //])
 
   return isLoading ? (
     <div className="grid grid-flow-row grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
@@ -43,7 +44,7 @@ export default function RealmsDashboard({
   ) : (
     <RealmsGrid
       certifiedRealms={certifiedRealms}
-      unchartedRealms={unchartedRealms}
+      unchartedRealms={[]}
       filteredRealms={filteredRealms}
       editing={editing}
       searching={searching}
