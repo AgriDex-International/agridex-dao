@@ -13,7 +13,7 @@ const SocialIcons = (props: Props) => {
         <a
           rel="noreferrer"
           target="_blank"
-          href="."
+          href="https://discord.gg/6NJRYDp3ss"
           className="shadow-sm duration-500 hover:scale-125 focus:scale-125"
         >
           <img src="/icons/discord.svg" className="h-11" alt="discord" />
